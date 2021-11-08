@@ -5,9 +5,68 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#l1{
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.main_div{
+  display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    height: 500px;
+    margin: 100px auto;
+    border-radius: 50px;
+    /* box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px; */
+}
+
+#insert-button{
+  font-weight: bold;
+    border-radius: 24px;
+    border: none;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 8px;
+}
+
+#insert-button:hover{
+  background-color: rgb(8, 245, 8);
+  transition: 0.2s ease-in-out;
+}
+
+#remove-button{
+  font-weight: bold;
+    border-radius: 24px;
+    border: none;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 8px;
+}
+
+
+#remove-button:hover{
+  background-color: rgb(252, 5, 5);
+  transition: 0.2s ease-in-out;
+}
+
+#input-ctr{
+  border-radius: 21px;
+  padding: 10px;
 }
