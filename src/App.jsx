@@ -2,7 +2,6 @@ import { useState } from "react";
 import Insert from "./Insert";
 import List from "./List";
 
-let count = 0;
 
 const App = () =>{
     const [listOfItems, setListOfItems] = useState([]);
@@ -10,8 +9,7 @@ const App = () =>{
     const onInsert = (tempVal) =>{
         setListOfItems((prevArray) =>{
             let newObj={
-                item: tempVal.listItem,
-                id:count++
+                item: tempVal.listItem
             };
             return [...prevArray,newObj]
         });
@@ -20,7 +18,7 @@ const App = () =>{
     const onRemove = (id) =>{
         let newList=[];
         listOfItems.forEach((item, index) =>{
-            if(item.id!==id)
+            if(index!==id)
                 newList.push(item);
         });
         setListOfItems(newList);
